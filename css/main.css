@@ -1,0 +1,134 @@
+/* no mouse pointer for touch screens */
+* {
+  -moz-user-select: none !important;
+  -khtml-user-select: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+
+  cursor: none !important;
+}
+
+
+.jssorb21 {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 6px;
+}
+.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av
+{
+    background: url(../img/b21.png) no-repeat;
+    overflow:hidden;
+    cursor: pointer;
+}
+.jssorb21 div:hover, .jssorb21 .av:hover { background-position: -5px -5px; }
+.jssorb21 div { background-position: -35px -5px; }
+.jssorb21 .av { background-position: -65px -5px; }
+.jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+
+.caption {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 25%;
+    padding: 1rem;
+    background-color: white;
+}
+
+.caption h1 {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.caption p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+.caption .authors {
+    text-align: right;
+    -webkit-margin-after: 0;
+}
+
+#info-button {
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+
+    height: 1.8rem;
+    width: 1.8rem;
+    z-index: 1000;
+
+
+    /*
+    background-color: white;
+
+    text-align: center;
+
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: black;
+    text-shadow: none;
+
+    border-radius: 50%;
+
+    opacity: 1;
+    */
+
+    background-image: url('../img/info-button-black.png');
+    background-size: 100%;
+}
+
+#info-button.active {
+    background-image: url('../img/info-button-white.png');
+}
+
+#info-button span {
+    display: none;
+}
+
+#lang-switcher {
+    position: absolute;
+    right: 1rem;
+    bottom: 5rem;
+    z-index: 10000;
+
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+}
+
+#lang-switcher ul {
+    list-style: none;
+    text-align: right;
+    padding: 0rem;
+    margin: 0;
+}
+
+#lang-switcher li {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+#lang-switcher li.active {
+    display: none;
+    color: black;
+    text-shadow: none;
+}
+
+video-js {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+video {
+    width: 100% !important;
+    height: auto !important;
+}
